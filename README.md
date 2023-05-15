@@ -6,7 +6,11 @@
 
 cd openwrt-18.06
 
-#編譯SF1200
+#更新feed
+
+/scripts/feeds update -a && ./scripts/feeds install -a
+
+#編譯SF120
 
 cp .config.sf1200 .config
 
@@ -14,11 +18,7 @@ cp .config.sf1200 .config
 
 cp .config.sf1200 .config
 
-#更新feeds
-
-./scripts/feeds update -a && ./scripts/feeds install -a
-
-#配置所需app
+配置所需app
 
 make menuconfig
 
