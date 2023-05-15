@@ -1,9 +1,9 @@
-QCA99X0_BOARD_REV:=ddcec9efd245da9365c474f513a855a55f3ac7fe
+CA99X0_BOARD_REV:=e404444dfc0baf7d0fcde21ab8ec333608c9960
 QCA99X0_BOARD_FILE:=board-2.bin.$(QCA99X0_BOARD_REV)
 
 define Download/qca99x0-board
-  URL:=https://github.com/kvalo/ath10k-firmware/tree/master/QCA99X0/hw2.0
-  URL_FILE:=board-2.bin?id=$(QCA99X0_BOARD_REV)
+  URL:=https://github.com/kvalo/ath10k-firmware/raw/master/QCA99X0/hw2.0/
+  URL_FILE:=board-2.bin
   FILE:=$(QCA99X0_BOARD_FILE)
   HASH:=24148daa956ef4bebb903dbc77cbe458796f9db70adc0433023a0a0254c7d8e5
 endef
